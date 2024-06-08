@@ -84,7 +84,7 @@ const ChessBoard = ({ chess, board, socket, setBoard }: {
                   >
                     <div className="w-full justify-center flex h-full">
                       <div className="h-full flex justify-center flex-col">
-                        {square ? <img className="w-4" src={`/${square?.color === "b" ? square?.type : `${square?.type?.toUpperCase()} copy`}.png`} /> : null} 
+                        {square ? <img className={`w-4 ${square?.color === 'b' && 'rotate-180'}`} src={`/${square?.color === "b" ? square?.type : `${square?.type?.toUpperCase()} copy`}.png`} /> : null} 
                       </div>
                     </div>
                   </div>
