@@ -8,7 +8,7 @@ import { Chess } from "chess.js"
 
 const GamePage = () => {
   const socket = useSocket();
-  const [chess, setChess] = useState(new Chess());
+  const [chess] = useState(new Chess());
   const [board, setBoard] = useState(chess.board());
   const [started, setStarted] = useState(false)
 
